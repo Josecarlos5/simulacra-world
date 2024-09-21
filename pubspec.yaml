@@ -1,0 +1,33 @@
+
+name: simulacra_world
+description: "A project inspired by Simulacra and Simulation."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  flutter_spinkit: ^5.1.0       # For loading animations
+  google_fonts: ^6.2.1          # Latest version of Google Fonts (to avoid AssetManifest conflicts)
+  audioplayers: ^6.1.0          # Updated version for playing background sounds (compatible with web)
+  http: ^1.0.0                  # Fetch real-time data for quotes
+  cupertino_icons: ^1.0.8       # iOS style icons
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0         # Recommended lints for good coding practices
+
+flutter:
+  uses-material-design: true    # Ensures Material Icons are included with the app
+
+  # Define the sound file as an asset
+  assets:
+    - assets/sounds/hyperreal_bg.mp3
